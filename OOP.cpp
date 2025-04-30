@@ -30,6 +30,8 @@ int main () {
     students student3 = students("Bryan", "PLMar", 19);
     student3.callStudents();
 
+    students student4 = students("Kyle", "RTU", 20);
+    student4.callStudents();
 
     return 0;
 
