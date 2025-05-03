@@ -23,6 +23,8 @@ int mMenu () {
         cout << "Your answer: ";
         cin >> ourDate;
 
+         
+
         if (ourDate == 'a' || ourDate == 'A') {
             cout<<"\nSana kinain ko na lang ang El Fili."<<endl;
         } else if (ourDate == 'b' || ourDate == 'B') {

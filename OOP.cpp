@@ -1,5 +1,8 @@
 #include <iostream>
 using std::string;
+using std::cin;
+using std::cout;
+using std::endl;
 
 class students {
     public:
@@ -8,14 +11,27 @@ class students {
     int Age;
 
     void callStudents() {
-        std::cout<<"My name is "<<Name<<std::endl;
-        std::cout<<"My school is "<<School<<std::endl;
-        std::cout<<"My age is "<<Age<<std::endl;
-        std::cout<<std::endl;
+        cout<<"My name is "<<Name<<endl;
+        cout<<"My school is "<<School<<endl;
+        cout << "My age is " << Age <<endl;
+        cout<<endl;
     }
     students (string name, string school, int age) {
         Name = name;
         School = school;
+        Age = age;
+    }
+};
+
+class pets {
+    public:
+    string animalName;
+    string scName;
+    int Age;
+
+    void callAnimal(string name, string sn, int age) {
+        animalName = name;
+        scName = sn;
         Age = age;
     }
 };
@@ -32,6 +48,9 @@ int main () {
 
     students student4 = students("Kyle", "RTU", 20);
     student4.callStudents();
+
+    pets pets1 = pets("Taylor", "Caloocan", 3);
+    pets1.callAnimal();
 
     return 0;
 
