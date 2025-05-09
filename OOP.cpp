@@ -29,11 +29,17 @@ class pets {
     string scName;
     int Age;
 
-    void callAnimal(string name, string sn, int age) {
+    void callAnimal() {
+        cout <<"Animal name is: "<<animalName<<endl;
+        cout << "I am from: "<<scName<<endl;
+        cout << "I am "<<Age<<" years old!"<<endl;
+    }
+    pets (string name, string sn, int age) {
         animalName = name;
         scName = sn;
-        Age = age;
+        Age= age;
     }
+
 };
 
 int main () {
