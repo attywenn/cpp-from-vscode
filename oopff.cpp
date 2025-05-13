@@ -1,26 +1,26 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
-class Person {
-    public:
-        string name;
-        int age;
+using std::string;
+using std::cout;
+using std::endl;
 
-        void setDetails(string Name, int Age) {
-            name = Name;
-            age = Age;
-        }
+class Student {
+public:
+    string name;
+    int age;
 
-        void displayDetails() {
-            cout << "Name: " << name << endl;
-            cout << "Age: " << age << endl;
-        }
+    Student(string nom, int ag) : name(nom), age(ag) {}
+
+    void introduce() const {
+        cout << "My name is " << name << endl;
+        cout << "I am " << age << " years old." << endl;
+    }
 };
 
 int main() {
-    Person person;
-    person.setDetails("Wency", 19);
-    person.displayDetails();
+    Student stud("Wency", 19);
+    stud.introduce();
 
     return 0;
 }
