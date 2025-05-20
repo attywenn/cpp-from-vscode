@@ -5,7 +5,10 @@ int main () {
     int x = 10;
     int &y = x;
 
-    cout << x << " " <<y;
+    int* z = &x;
+
+    cout << x << " " <<y<<endl;
+    cout << z<< " " <<&z;
 
     return 0;
 }
