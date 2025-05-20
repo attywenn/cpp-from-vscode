@@ -8,7 +8,13 @@ int main () {
     int* z = &x;
 
     cout << x << " " <<y<<endl;
-    cout << z<< " " <<&z;
+    cout << z<< " " <<&z<<endl;
+
+    cout<<x+y<<endl;
+
+    cout << "Hi, I am attorney wenn!"<<endl;
+
+    cout << "I am "<<x+y-1<<" years old"<<endl;
 
     return 0;
 }
