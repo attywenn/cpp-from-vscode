@@ -1,26 +1,39 @@
 #include <iostream>
-#include <string>
-
-using std::string;
+#include<string>
 using std::cout;
 using std::endl;
+using std::cin;
+using std::string;
 
-class Student {
-public:
+
+class mystudents {
+    public:
     string name;
     int age;
 
-    Student(string nom, int ag) : name(nom), age(ag) {}
-
-    void introduce() const {
-        cout << "My name is " << name << endl;
-        cout << "I am " << age << " years old." << endl;
+    void conv(string Name, int Age) {
+        name = Name;
+        age = Age;
     }
+
+    void print() {
+        cout << "My name is: " <<name<<endl;
+        cout << "My age is: "<<age<<endl;
+    }
+
+    
 };
 
-int main() {
-    Student stud("Wency", 19);
-    stud.introduce();
+int main () {
+
+    mystudents student0;
+    student0.conv("shainna", 19);
+    student0.print();
+
+    mystudents vendors;
+    vendors.conv("Wenxx", 19);
+    vendors.print();
 
     return 0;
+
 }
